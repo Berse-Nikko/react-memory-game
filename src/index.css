@@ -68,6 +68,10 @@ p {
   pointer-events: none;
 }
 
+.checked {
+  color: green;
+}
+
 .empty {
   height: 2.5rem;
 }

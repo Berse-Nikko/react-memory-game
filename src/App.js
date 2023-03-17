@@ -22,7 +22,7 @@ const App = () => {
     if (index.length === 2) {
       setChecking(true)
       console.log(checking)
-      sleep(500).then(() => {
+      sleep(750).then(() => {
         const newBoard = [...board]
         if (num === randomGame[index[0]]) {
           newBoard[pos] = true
@@ -51,7 +51,7 @@ const App = () => {
         {board.map((value, index) => {
           if (value === true) {
             return (
-              <div className="num" key={index}>
+              <div className="num checking" key={index}>
                 <h2>{randomGame[index]}</h2>
               </div>
             )
